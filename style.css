@@ -145,6 +145,8 @@ body{
     }
 
 
+
+
   /* Carrusel */
   * {box-sizing:border-box}
 
@@ -165,7 +167,6 @@ body{
     height: 52em;
     padding-top: 2em;
     padding-left: 30%;
-  
   }
   
   /* Next & previous buttons */
@@ -224,4 +225,60 @@ body{
       padding-top: 10px;
       padding-bottom: 10px;
       color: aliceblue;
+    }
+
+
+    @media screen and (max-width: 700px) {
+      .indextext, .healerText, .dpsText, .tankText {
+        width: 100%;
+        height: 10%;
+        position: relative;
+        font-size: medium;
+        margin-left: -10%;
+      }
+      .contentSlide {
+        display: flex;
+        flex-wrap: wrap;
+        color: aliceblue;
+        padding-top: 2em;
+        padding-left: 20%;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .indextext, .healerText, .dpsText, .tankText {
+        width: 100%;
+        text-align: center;
+        float: none;
+        font-size: small;
+      }
+      .contentSlide{
+        display: flex;
+        flex-wrap: wrap;
+        color: aliceblue;
+        height: 52em;
+        padding-left: 30%;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .displayCarousel {
+        display: flex;
+        flex-wrap: wrap;
+        color: aliceblue;
+        padding-top: 25em;
+        margin-right: -60%;
+        width: 60%;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .displayCarousel {
+        display: flex;
+        flex-wrap: wrap;
+        color: aliceblue;
+        height: 52em;
+        padding-left: 30%;
+        width: 60%
+      }
     }
