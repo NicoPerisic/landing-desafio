@@ -1,0 +1,227 @@
+body{
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NavBar */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+}
+
+    /* NavBar */
+
+.topnav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    height: 8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 200px;
+}
+
+.topnav a{
+  display: flex;
+  justify-content: center;
+}
+
+  /* Container Index */
+  .maincont{
+    display: flex;
+    flex-direction: column;
+    background-image: url("bg.png");
+    color: aliceblue;
+    height: 50em;
+    padding-left: 20%;
+  }
+
+  .displayCarousel{
+    margin-left: 20em;
+    margin-top: -25em;
+    justify-content: center;
+  }
+
+  /* Barra del lado */
+  .sidenav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .sidenav a {
+    display: block;
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+  }
+  
+  .sidenav a.active {
+    background-color: #1693A6;
+    color: white;
+  }
+  
+  .sidenav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidenav a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+    /* Textos */
+
+    .indextext{
+      font-size: x-large;
+      width: 10em;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      margin-right: 2em; 
+    }
+
+    .tankText{
+      font-size: large;
+      width: 10em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 4em;
+      margin-right: 2em; 
+    }
+    
+    .healerText{
+      font-size: large;
+      width: 10em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 4em;
+      margin-right: 2em; 
+    }
+
+    .dpsText{
+      font-size: large;
+      width: 10em;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 4em;
+      margin-right: 3em; 
+    }
+
+
+  /* Carrusel */
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .contentSlide{
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url("bg.png");
+    color: aliceblue;
+    height: 52em;
+    padding-top: 2em;
+    padding-left: 30%;
+  
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+  /* Fading */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+    /* Footer */
+
+    footer{
+      display: flex;
+      justify-content: center;
+      font-size: large;
+      margin-left: 200px;
+      background-color: #333;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: aliceblue;
+    }
